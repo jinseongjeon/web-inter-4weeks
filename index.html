@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Every my time</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1 class="clock"></h1>
+    <form class="login">
+      <input
+        class="login__input"
+        type="text"
+        placeholder="이름을 적어주세요 :D"
+        required/>
+    </form>
+    <text class="greetings hidden">This must be hidden</text>
+    <form class="todo hidden">
+      <input
+        class="todo__input hidden"
+        type="text"
+        placeholder="오늘의 할일은 무엇인가요?"
+        required>
+    </form>
+    <ul class="todolist hidden"></ul>
+
+    <span class="weather">
+      <span class="weather__city"></span>
+      <span class="weather__info"></span>
+    </span>
+
+    <script src="src/login.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/todo.js"></script>
+  </body>
+</html>

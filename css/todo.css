@@ -1,0 +1,62 @@
+.todo {
+  margin-bottom: 18px;
+}
+.todo__input {
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 32px;
+  border-bottom: 1px solid whitesmoke;
+  padding-top: 80px;
+  transition: border-color 0.5s ease-in-out;
+}
+.todo__input:focus {
+  outline: none;
+  border-color: tomato;
+}
+.todo__input:focus::placeholder {
+  opacity: 0;
+}
+.todo__input::placeholder {
+  font-size: 18px;
+  text-align: left;
+  color: whitesmoke;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.todolist {
+  list-style: none;
+  margin-top: 20px;
+  width: 400px;
+}
+li {
+  width: 100%;
+  position: relative;
+  padding: 5px 0px;
+  border-bottom: 1px solid transparent;
+  will-change: border-color;
+  transition: border-color 0.5s ease-in-out;
+}
+li .emoji:first-child {
+  margin-right: 20px;
+}
+li span:nth-child(2) {
+  overflow-wrap: break-word;
+}
+li .emoji:last-child {
+  position: absolute;
+  right: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+li:hover {
+  border-color: tomato;
+}
+.emoji:hover {
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+  margin-left: -4.5px;
+}
